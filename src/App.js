@@ -129,26 +129,41 @@ class SectionTwo extends React.Component {
     },
   ]
 
-  renderArticle(header, text) {
+  // renderArticle(header, text) {
+  //   return (
+  //     // <Article header={header} text={text} />
+  //     <Article header="Hola" text="hola" />
+  //   );
+  // }
+
+  renderArticles(articles) {
     return (
-      // <Article header={header} text={text} />
-      <Article header="Hola" text="hola" />
+      articles.forEach(article => {
+        // <Article header={header} text={text} />
+        <Article header="Hola" text="hola" />
+      })
     );
   }
 
   render() {
 
-    const renderArticle = this.renderArticle;
+    const renderArticles = this.renderArticles;
     const articlesToShow = this.articles;
 
     return (
       <section class="section2">
         <div class="inner">
-          {
+          {/* {
             articlesToShow.forEach(article => {
               renderArticle(article.header, article.text);
             })
+          } */}
+
+          {
+            renderArticles(articlesToShow)
           }
+
+
         </div>
       </section>
     );
