@@ -1,10 +1,10 @@
 .products {
-  width: 700px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
   background-color: wheat;
-  top: 400px;
   height: 500px;
+  width: 700px;
   padding: 30px;
+  
+  position: relative;
+  margin: auto;
+  top: -200px;
 }
