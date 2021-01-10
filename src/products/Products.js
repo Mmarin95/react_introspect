@@ -7,13 +7,13 @@ import './Products.css'
 
 const products = [
   {
-    title: 'Product 1',
-    description: 'The product description 1',
+    title: 'Itaque facere fugiat eum.',
+    description: 'Itaque facere fugiat eum. Tempora eum molestiae voluptas consequatur aut corporis quia. Recusandae aut.',
     image: background,
   },
   {
-    title: 'Product 2',
-    description: 'The product description 2',
+    title: 'Itaque facere fugiat eum.',
+    description: 'Itaque facere fugiat eum. Tempora eum molestiae voluptas consequatur aut corporis quia. Recusandae aut.',
     image: background,
   }
 ]
@@ -21,7 +21,7 @@ const products = [
 const Products = () => {
   return (
     <div className="products">
-      <h3>Products</h3>
+      <h3 className="products__intro">Products</h3>
       {
         products.map((product, index) => (
           <Product
