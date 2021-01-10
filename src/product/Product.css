@@ -11,7 +11,6 @@
   color: #263276;
   font-family: "Lato";
   text-align: center;
-
   justify-content: space-around;
   align-items: center;
 }
@@ -30,6 +29,7 @@
 }
 
 .product__block {
+  width: 515px;
   text-align: start;
 }
 
@@ -46,4 +46,13 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.product--special {
+  background-color: #263276;
+  color: #ffffff;
+}
+
+.product__description--special {
+  font-weight: bold;
 }

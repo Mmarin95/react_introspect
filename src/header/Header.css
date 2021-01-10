@@ -4,7 +4,7 @@
   height: 600px;
   background-image: url('./assets/background.jpg');
   font-family: "Lato";
-  margin: auto;
+  /* margin: auto; */
 }
 
 .header__block {
