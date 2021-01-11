@@ -41,4 +41,14 @@ describe('App', () => {
     expect(firstProduct).toBeInTheDocument()
     expect(secondProduct).toBeInTheDocument()
   })
+
+  test('should have a form', () => {
+    render(<App />)
+
+    const form = screen.getByText('<form>')
+
+    expect(form).toBeInTheDocument()
+  })
+
+
 })

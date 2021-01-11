@@ -1,15 +1,17 @@
 import React from 'react'
 import { Header } from './header'
 import { Products } from './products'
+import { Contact_Form } from './contact_form'
 
 import './App.css'
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <Products />
-    </div>
+      <Contact_Form />
+    </>
   )
 }
 
