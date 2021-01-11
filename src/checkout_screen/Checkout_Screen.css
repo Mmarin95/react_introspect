@@ -1,0 +1,46 @@
+.checkoutScreen {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.05));
+    height: 400px;
+    left: calc(50% - 840px/2);
+    position: fixed;
+    top: 25%;
+    width: 840px;
+    z-index: 3000;
+}
+
+.checkoutScreen__content {
+    position: relative;
+    top: 100px;
+    font-family: "Lato";
+    text-align: center;
+    color: #263276;
+}
+
+.checkoutScreen__img {
+    padding: 29px;
+    border-radius: 50%;
+    border: 3px solid #263276;
+    margin-bottom: 40px;
+}
+
+.checkoutScreen__block {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+
+.checkoutScreen__block-title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.checkoutScreen__block-intro {
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}

@@ -2,13 +2,13 @@ import React from 'react'
 
 import './Product.css'
 
-const Product = ({ title, description, image, isSpecial }) => {
+const Product = ({ title, description, image, alt }) => {
 
-  if (!isSpecial) {
+  if (!description == '') {
     return (
       <div className="product">
         <input className="product__checkbox" type="checkbox" id={title} name={title} value=""></input>
-        <img className="product__image" src={image} alt="the description" />
+        <img className="product__image" src={image} alt={alt} />
         <div className="product__block">
           <span className="product__title">{title}</span>
           <p className="product__description">{description}</p>
@@ -17,11 +17,11 @@ const Product = ({ title, description, image, isSpecial }) => {
     )
   } else {
     return (
-      <div className="product product--special">
-        <input className="product__checkbox product__checkbox--special" type="checkbox" id={title} name={title} value=""></input>
-        <img className="product__image product__image--special" src={image} alt="the description" />
-        <div className="product__block product__block--special">
-          <span className="product__description product__description--special">{description}</span>
+      <div className="product">
+        <input className="product__checkbox" type="checkbox" id={title} name={title} value=""></input>
+        <img className="product__image" src={image} alt={alt} />
+        <div className="product__block">
+          <span className="product__title">{title}</span>
         </div>
       </div>
     )

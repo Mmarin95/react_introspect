@@ -15,6 +15,11 @@
   width: 800px;
 }
 
+.product:hover {
+  background-color: #263276;
+  color: #ffffff;
+}
+
 .product__checkbox {
   width: 30px;
   height: 30px;
@@ -46,11 +51,6 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-}
-
-.product--special {
-  background-color: #263276;
-  color: #ffffff;
 }
 
 .product__description--special {

@@ -10,26 +10,40 @@ const Contact_Form = () => {
 
             <form className="contactForm__form" action="#">
 
-                <select className="contactForm__select" id="salutation" name="salutation">
-                    <option value="" disabled selected>Salutation</option>
-                    <option value="mr">Mr.</option>
-                    <option value="mrs">Mrs.</option>
-                </select>
+                <div className="contactForm__select">
+                    <label htmlFor="salutation" className="contactForm__name__placeholder">Salutation</label>
+                    <select className="contactForm__select__input" id="salutation" name="salutation">
+                        {/* <option className="select_placeholder" value="" disabled selected>Salutation</option> */}
+                        <option value="mr">Mr.</option>
+                        <option value="mrs">Mrs.</option>
+                    </select>
+                </div>
 
-                <input className="contactForm__name" placeholder="First Name" type="text" id="fname" name="fname" />
+                <div className="contactForm__name">
+                    <label htmlFor="fname" className="contactForm__name__placeholder">First Name</label>
+                    <input className="contactForm__name__input" type="text" id="fname" name="fname" />
+                </div>
 
-                <input className="contactForm__name" placeholder="Last Name" type="text" id="lname" name="lname" />
+                <div className="contactForm__name">
+                    <label htmlFor="lname" className="contactForm__name__placeholder">Last Name</label>
+                    <input className="contactForm__name__input" type="text" id="lname" name="lname" />
+                </div>
 
-                <textarea className="contactForm__message" placeholder="Message" name="message" rows="10" cols="30">
-                </textarea>
+                <div className="contactForm__message">
+                    <label htmlFor="message" className="contactForm__name__placeholder">Message</label>
+                    <textarea className="contactForm__message__textarea" id="message" name="message" rows="5" cols="60">
+                    </textarea>
+                </div>
+
 
                 <div className="contactForm__conditions">
                     <input type="checkbox" id="conditions" name="conditions" value="conditions" />
-                    <label for="conditions">I have read the terms and conditions and accept them.</label>
+                    <span>I have read the terms and conditions and accept them.</span>
                 </div>
 
                 <div className="contactForm__submit">
-                    <input className="contactForm__submitButton" type="submit" value="Send information" />
+                    <label htmlFor="submit" hidden>Send</label>
+                    <input id="submit" className="contactForm__submitButton" type="submit" value="Send information" />
                 </div>
             </form>
         </div>

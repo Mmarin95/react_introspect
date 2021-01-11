@@ -30,7 +30,7 @@
     font-family: "Lato";
 }
 
-.contactForm__form>* {
+.contactForm__form * {
     margin-bottom: 10px;
 }
 
@@ -45,10 +45,53 @@
 
 /* .contactForm__select {} */
 
-/* .contactForm__name {} */
+.contactForm__select__input {
+    width: 475px;
+    border: 0px;
+    background-color: #ffffff;
+    background: url(assets/select_arrow.png) no-repeat right;
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+.contactForm__name {
+    position: relative;
+    text-align: left;
+}
+
+.contactForm__name__placeholder {
+    font-size: 10px;
+    color: #263276;
+    font-family: "Helvetica";
+    position: absolute;
+    top: 10px;
+}
+
+.contactForm__name__input {
+    font-size: 18px;
+    width: 475px;
+    color: #263276;
+    font-weight: 700;
+    font-family: "Lato";
+    border: 0px;
+}
 
 .contactForm__message {
     height: 150px;
+    position: relative;
+    text-align: left;
+}
+
+.contactForm__message__textarea {
+    border: 0px;
+    resize: none;
+    font-size: 18px;
+    width: 475px;
+    color: #263276;
+    font-weight: 700;
+    font-family: "Lato";
 }
 
 .contactForm__conditions {
@@ -57,7 +100,8 @@
     height: 30px;
     font-family: "Helvetica";
     position: relative;
-    top: -10px; /*  why don't overlap the ancestor margin-bottom like all the elements :( */
+    top: -10px;
+    /*  why don't overlap the ancestor margin-bottom like all the elements :( */
 }
 
 .contactForm__conditions>input[type="checkbox"] {
@@ -68,7 +112,7 @@
     width: 30px;
 }
 
-.contactForm__conditions>label {
+.contactForm__conditions>span {
     color: #263276;
     font-size: 14px;
     height: 30px;
@@ -82,7 +126,8 @@
     margin-top: 30px;
     position: relative;
     text-align: center;
-    top: -10px; /*  why don't overlap the ancestor margin-bottom like all the elements :( */
+    top: -10px;
+    /*  why don't overlap the ancestor margin-bottom like all the elements :( */
     width: inherit;
 }
 
