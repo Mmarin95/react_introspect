@@ -1,13 +1,37 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+/* Checkbox CSS */
+
+input[type=checkbox] {
+  background-color: black;
+}
+
+/* input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]+label {
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background: url("https://image.flaticon.com/icons/png/512/24/24396.png") no-repeat;
+  height: 60px;
+  width: 60px;
+  background-size: 50%;
+}
+
+input[type=checkbox]:checked+label {
+  background: url("https://cdn4.iconfinder.com/data/icons/social-productivity-line-art-4/128/checkbox-square-checked-512.png") no-repeat;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  background-size: 50%;
+} */

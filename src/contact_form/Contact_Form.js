@@ -38,6 +38,7 @@ const Contact_Form = () => {
 
                 <div className="contactForm__conditions">
                     <input type="checkbox" id="conditions" name="conditions" value="conditions" />
+                    {/* <label htmlFor="conditions"></label> */}
                     <span>I have read the terms and conditions and accept them.</span>
                 </div>
 

@@ -12,25 +12,29 @@ const products = [
     title: 'Itaque facere fugiat eum.',
     description: 'Itaque facere fugiat eum. Tempora eum molestiae voluptas consequatur aut corporis quia. Recusandae aut.',
     image: background,
-    alt: 'Product 1'
+    alt: 'Product 1',
+    productId: 'product1',
   },
   {
     title: 'Itaque facere fugiat eum.',
     description: 'Itaque facere fugiat eum. Tempora eum molestiae voluptas consequatur aut corporis quia. Recusandae aut.',
     image: background,
-    alt: 'Product 2'
+    alt: 'Product 2',
+    productId: 'product2',
   },
   {
     title: 'Itaque facere fugiat eum.',
     description: 'Itaque facere fugiat eum. Tempora eum molestiae voluptas consequatur aut corporis quia. Recusandae aut.',
     image: background,
-    alt: 'Product 3'
+    alt: 'Product 3',
+    productId: 'product3',
   },
   {
     title: 'I would like a personal Packaging',
     description: '',
     image: giftIcon,
-    alt: 'Product 4'
+    alt: 'Product 4',
+    productId: 'product4',
   }
 ]
 
@@ -46,6 +50,7 @@ const Products = () => {
             description={product.description}
             image={product.image}
             alt={product.alt}
+            productId={product.productId}
           />
         ))
       }

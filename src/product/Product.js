@@ -2,12 +2,13 @@ import React from 'react'
 
 import './Product.css'
 
-const Product = ({ title, description, image, alt }) => {
+const Product = ({ title, description, productId, image, alt }) => {
 
   if (!description == '') {
     return (
       <div className="product">
-        <input className="product__checkbox" type="checkbox" id={title} name={title} value=""></input>
+        <input className="product__checkbox" type="checkbox" id={productId} name={productId} value=""></input>
+        {/* <label htmlFor={productId}></label> */}
         <img className="product__image" src={image} alt={alt} />
         <div className="product__block">
           <span className="product__title">{title}</span>
@@ -18,7 +19,8 @@ const Product = ({ title, description, image, alt }) => {
   } else {
     return (
       <div className="product">
-        <input className="product__checkbox" type="checkbox" id={title} name={title} value=""></input>
+        <input className="product__checkbox" type="checkbox" id={productId} name={productId} value=""></input>
+        {/* <label htmlFor={productId}></label> */}
         <img className="product__image" src={image} alt={alt} />
         <div className="product__block">
           <span className="product__title">{title}</span>
