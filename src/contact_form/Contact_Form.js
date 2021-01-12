@@ -1,18 +1,7 @@
 import React from 'react'
-import $ from "jquery";
 import './Contact_Form.css'
 
-const sendInfo = () => {
-    $("#content").css('filter', 'blur(3px)')
-    $(".checkoutScreen").css('display', 'initial')
-
-    setTimeout(() => {
-        $("#content").css('filter', 'initial')
-        $(".checkoutScreen").css('display', 'none')
-    }, 3000);
-}
-
-const Contact_Form = () => {
+const Contact_Form = ({ onclick }) => {
     return (
         <div className="contactForm">
 
@@ -44,7 +33,6 @@ const Contact_Form = () => {
                     </textarea>
                 </div>
 
-
                 <div className="contactForm__conditions">
                     <input type="checkbox" id="conditions" name="conditions" value="conditions" />
                     {/* <label htmlFor="conditions"></label> */}
@@ -53,7 +41,7 @@ const Contact_Form = () => {
 
                 <div className="contactForm__submit">
                     <label htmlFor="submit" hidden>Send</label>
-                    <input onClick={sendInfo} id="submit" className="contactForm__submitButton" type="submit" value="Send information" />
+                    <input onClick={onclick} id="submit" className="contactForm__submitButton" type="submit" value="Send information" />
                 </div>
             </form>
         </div>

@@ -1,12 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 import './Checkout_Screen.css'
-import check_icon from './assets/check_icon.png';
+import check_icon from './assets/check_icon.png'
 
-const Checkout_Screen = () => {
+const Checkout_Screen = ({ checkoutStyle }) => {
     return (
-        <div className="checkoutScreen" style={{display: 'none'}}>
-        {/* <div className="checkoutScreen"> */}
+        <div className="checkoutScreen" style={checkoutStyle}>
             <div className="checkoutScreen__content">
                 <img className="checkoutScreen__img" src={check_icon}></img>
                 <div className="checkoutScreen__block">
