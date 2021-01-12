@@ -9,10 +9,14 @@ import './App.css'
 function App() {
   return (
     <>
-      <Header />
-      <Products />
-      <Contact_Form />
-      <Checkout_Screen />
+      <div id="content">
+        <Header />
+        <Products />
+        <Contact_Form />
+      </div>
+      <>
+        <Checkout_Screen />
+      </>
     </>
   )
 }

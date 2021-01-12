@@ -1,6 +1,16 @@
 import React from 'react'
-
+import $ from "jquery";
 import './Contact_Form.css'
+
+const sendInfo = () => {
+    $("#content").css('filter', 'blur(3px)')
+    $(".checkoutScreen").css('display', 'initial')
+
+    setTimeout(() => {
+        $("#content").css('filter', 'initial')
+        $(".checkoutScreen").css('display', 'none')
+    }, 3000);
+}
 
 const Contact_Form = () => {
     return (
@@ -13,7 +23,6 @@ const Contact_Form = () => {
                 <div className="contactForm__select">
                     <label htmlFor="salutation" className="contactForm__name__placeholder">Salutation</label>
                     <select className="contactForm__select__input" id="salutation" name="salutation">
-                        {/* <option className="select_placeholder" value="" disabled selected>Salutation</option> */}
                         <option value="mr">Mr.</option>
                         <option value="mrs">Mrs.</option>
                     </select>
@@ -44,7 +53,7 @@ const Contact_Form = () => {
 
                 <div className="contactForm__submit">
                     <label htmlFor="submit" hidden>Send</label>
-                    <input id="submit" className="contactForm__submitButton" type="submit" value="Send information" />
+                    <input onClick={sendInfo} id="submit" className="contactForm__submitButton" type="submit" value="Send information" />
                 </div>
             </form>
         </div>
